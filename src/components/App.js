@@ -12,9 +12,9 @@ using map make a function that creates cards for each object with a photo, name,
 */
 
 function App() {
-  const [animals, setAnimals] = useState(null)
+  const [animals, setAnimals] = useState([])
   useEffect(()=>{
-    fetch("  http://localhost:3000/animals")
+    fetch("  http://localhost:4000/animals")
     .then(res=>res.json())
     .then(animalData => setAnimals(animalData))
   },[])
