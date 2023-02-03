@@ -2,7 +2,7 @@ import '../styles/App.scss'
 import Header from "./Header"
 import Home from "./Home"
 import { useEffect, useState } from 'react';
-import { Route, Switch } from "react-router-dom";
+// import { Route, Switch } from "react-router-dom";
 
 /* 
 create an instagram for animals
@@ -18,7 +18,7 @@ function App() {
     .then(res=>res.json())
     .then(animalData => setAnimals(animalData))
   },[])
-  // console.log(animals)
+  console.log(animals)
   return (
     <div className="App">
       <Header />
