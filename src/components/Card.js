@@ -1,8 +1,8 @@
 import "../styles/Card.scss"
 
-function Card({name,image,description,family,id}){
+function Card({name,image,description,family}){
     return(
-    <div className="card" key={id}>
+    <div className="card">
         <div className="image-container">
             <img src={image} alt={name} className="image" />
         </div>
