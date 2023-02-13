@@ -1,6 +1,7 @@
 .content{
     // display: flex;
     // justify-content: center;
+
     display: grid;
     grid-template-columns: 1fr;
     padding-top: 5em;
@@ -14,6 +15,10 @@
     }
     @media (min-width:1300px) {
         grid-template-columns: repeat(3,1fr);
+    }
+    @media (min-width:1800px) {
+        padding-left: 10em;
+        padding-right: 10em;
     }
     
 }
