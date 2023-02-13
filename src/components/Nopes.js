@@ -1,5 +1,4 @@
 import "../styles/Nopes.scss"
-import Card from "./Card"
 import GreaterCard from "./GreaterCard"
 
 function Nopes({animalData}){

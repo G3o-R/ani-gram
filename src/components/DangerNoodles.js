@@ -1,5 +1,4 @@
 import "../styles/DangerNoodles.scss"
-import Card from "./Card"
 import GreaterCard from "./GreaterCard"
 
 function DangerNoodles({animalData}){

@@ -1,5 +1,4 @@
 import "../styles/DangerHuggers.scss"
-import Card from "./Card"
 import GreaterCard from "./GreaterCard"
 
 function DangerHuggers({animalData}){
