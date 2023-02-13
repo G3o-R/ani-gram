@@ -32,7 +32,15 @@ function App() {
 
   let lastScrollY = window.scrollY
   window.addEventListener("scroll",()=>{
-    console.log(lastScrollY)
+    if(lastScrollY > window.scrollY){
+      // going up
+      setVisibilty(true)
+    }
+    if(lastScrollY < window.scrollY){
+      // going down
+      setVisibilty(false)
+    }
+    
     lastScrollY = window.scrollY
   })
 
