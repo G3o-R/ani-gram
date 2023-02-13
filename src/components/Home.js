@@ -17,7 +17,7 @@ function Home({animalData,setAnimals}){
                 image={animal.image}
                 description={animal.description}
                 family={animal.family}
-                id={animal.id}
+                key={animal.id}
                 />
                 ))}
         </div>
