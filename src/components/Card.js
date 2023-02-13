@@ -2,7 +2,7 @@ import "../styles/Card.scss"
 
 function Card({name,image,description,family,id}){
     return(
-    <div className="card">
+    <div className="card" key={id}>
         <div className="image-container">
             <img src={image} alt={name} className="image" />
         </div>

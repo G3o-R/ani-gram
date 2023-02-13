@@ -6,7 +6,7 @@ function DangerNoodles({animalData}){
     console.log("test")
     return(<div className="content-noodle">
         <div className="grid">
-          {animalData.map((animal)=> <GreaterCard animal={animal}/>)}
+          {animalData.map((animal)=> <GreaterCard animal={animal} key={animal.id}/>)}
     </div>
     </div>)
 }
