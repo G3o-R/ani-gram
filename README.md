@@ -5,4 +5,4 @@
     Technologies Used:
     * Javascript/React
     * CSS/SASS
-    *HTML
+    * HTML
