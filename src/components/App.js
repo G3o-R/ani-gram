@@ -22,11 +22,19 @@ function App() {
     .then(animalData => setAnimals(animalData))
   },[])
 
-  // console.log(animals[0].family)
-
   const huggers = animals.filter( animal => animal.family === "hugger")
   const sneks = animals.filter( animal => animal.family === "snek")
   const nopes = animals.filter( animal => animal.family === "nope")
+
+  //Function to make navBar disappear and reappear when scrolling
+
+  const [visibility, setVisibilty] = useState(true)
+
+  let lastScrollY = window.scrollY
+  window.addEventListener("scroll",()=>{
+    console.log(lastScrollY)
+    lastScrollY = window.scrollY
+  })
 
   return (
     <div className="App">
