@@ -1,8 +1,11 @@
 import '../styles/App.scss'
-import Header from "./Header"
+import NavBar from "./NavBar"
 import Home from "./Home"
 import { useEffect, useState } from 'react';
-// import { Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import DangerHuggers from './DangerHugger';
+import DangerNoodles from './DangerNoodles';
+import Nopes from './Nopes';
 
 /* 
 create an instagram for animals
@@ -18,25 +21,31 @@ function App() {
     .then(res=>res.json())
     .then(animalData => setAnimals(animalData))
   },[])
-  console.log(animals)
+
+  // console.log(animals[0].family)
+
+  const huggers = animals.filter( animal => animal.family === "hugger")
+  const sneks = animals.filter( animal => animal.family === "snek")
+  const nopes = animals.filter( animal => animal.family === "nope")
+
   return (
     <div className="App">
-      <Header />
-      <Home animalData = {animals}/>
-      {/* <Switch>
-        <Route path="/">
-          <Home />
-          <Switch>
+      <NavBar />
+      {/* <Home animalData = {animals}/> */}
+      <Switch>
+        <Route exact path="/">
+          <Home animalData={animals} setAnimals={setAnimals}/>
+          </Route>
         <Route path="/dangerHuggers">
-          <DangerHuggers />
+          <DangerHuggers animalData={huggers}/>
         </Route>
         <Route path="/dangerNoodles">
-          <DangerNoodles />
+          <DangerNoodles animalData={sneks}/>
         </Route>
         <Route path="/nopes">
-          <Nopes />
+          <Nopes animalData={nopes}/>
         </Route>
-      </Switch> */}
+      </Switch>
     </div>
   );
 }

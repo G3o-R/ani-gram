@@ -1,9 +1,14 @@
 import "../styles/Home.scss"
 import Card from "./Card"
+import NewAnimalForm from "./NewAnimalForm"
 
-function Home({animalData}){
-    console.log(animalData)
+
+function Home({animalData,setAnimals}){
+    function handleNewAnimal(newAnimal){
+        setAnimals([...animalData,newAnimal])
+    }
     return(
+        <>
         <div className="content">
             {/* test */}
             {animalData.map((animal)=>(
@@ -12,10 +17,14 @@ function Home({animalData}){
                 image={animal.image}
                 description={animal.description}
                 family={animal.family}
-                key={animal.id}
+                id={animal.id}
                 />
-            ))}
+                ))}
         </div>
+                <div className="footer">
+                <NewAnimalForm handleNewAnimal={handleNewAnimal}/>
+                </div>
+                </>
     )
 }
 

@@ -1,6 +1,6 @@
 .content{
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     padding-top: 5em;
     display: grid;
     row-gap: 32px;
@@ -8,4 +8,11 @@
     grid-template-columns: repeat(3,1fr);
     margin-left: 4em;
     margin-right: 4em;
+    padding-bottom: 5em;
+}
+.footer{
+    bottom: 0;
+    height: 20rem;
+    background-color: rgb(100, 170, 231);
+    padding-top: 5em;
 }

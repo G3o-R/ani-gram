@@ -1,95 +1,116 @@
 {
-  "animals":[
-      {
-          "name":"Whinnie the pooh",
-          "image":"https://writeortakeanap.files.wordpress.com/2018/08/pooh-bear.jpg",
-          "description":"An apex predator",
-          "family":"bear",
-          "id": 1
-      },
-      {
-          "name":"Derp Noodle",
-          "image":"https://media.npr.org/assets/img/2015/03/19/viper-6686abfdcf156559aeb350dbe8beb10de54ead12-s1100-c50.jpg",
-          "description":"It sees all",
-          "family":"snek",
-          "id": 2
-      },
-      {
-          "name":"Cute Nope",
-          "image":"https://bird-x.com/wp-content/uploads/spider-closeup.jpg",
-          "description":"Can steal your girl",
-          "family":"nope",
-          "id": 3
-      },
-      {
-          "name":"Baby Snow Bear",
-          "image":"https://media-cldnry.s-nbcnews.com/image/upload/streams/2014/February/140225/2D11741327-105187-lisa-granshawAAEA3BA7-DBD0-2809-3D75-A303123C3B8F.jpg",
-          "description":"Not a marshmellow",
-          "family":"bear",
-          "id": 4
-      },
-      {
-          "name":"Water Noodle",
-          "image":"https://th-thumbnailer.cdn-si-edu.com/QsYOcBjhQbIjXBQdrw2QH_hcpuc=/1000x750/filters:no_upscale():focal(990x769:991x770)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/54/45/5445b3e4-8c1e-45b6-9d07-ce4286b5b4d3/image-1_web.jpg",
-          "description":"Why God why?",
-          "family":"snek",
-          "id": 5
-      },
-      {
-          "name":"Nope nope nope nope...",
-          "image":"https://i.insider.com/5d09cae21568f2194e0c4743?width=700",
-          "description":"Again... why God why!?",
-          "family":"nope",
-          "id": 6
-      },
-      {
-          "name":"Baby Noodle",
-          "image":"https://www.nhm.ac.uk/content/dam/nhmwww/discover/snake-vision/snake-vision-full-width.jpg",
-          "description":"Awww",
-          "family":"snek",
-          "id": 7
-      },
-      {
-          "name":"Ninja Bear",
-          "image":"https://images.unsplash.com/photo-1566487097168-e91a4f38bee2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGFuZGElMjBiZWFyfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-          "description":"The Dragon Warrior",
-          "family":"bear",
-          "id": 8
-      },
-      {
-          "name":"Tasty Noodles",
-          "image":"https://theplantbasedschool.com/wp-content/uploads/2022/05/Rigatoni-arrabbiata-new-3.jpg",
-          "description":"Yum",
-          "family":"snek",
-          "id": 9
-      },
-      {
-          "name":"Teddy",
-          "image":"https://people.com/thmb/Qo9UdBJorpI5rlv7s621GfGDj2Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(399x0:401x2)/ted-movie-01-800-0f6654196fd74b58a8687a2ca3501669.jpg",
-          "description":"Just a teddy bear",
-          "family":"bear",
-          "id": 10
-      },
-      {
-          "name":"Avenger Nope",
-          "image":"https://cdn.branchcms.com/Yj0Dao1bVx-1285/images/blogs/black-widow-spider-in-garden.jpg",
-          "description":"Doesn't actually have fall damage",
-          "family":"nope",
-          "id": 11
-      },
-      {
-          "name":"Dragon Noodle",
-          "image":"https://www.psychologicalscience.org/redesign/wp-content/uploads/2011/01/PAFF_103017_snake-1024x585.jpg",
-          "description":"Can certainly breathe fire",
-          "family":"snek",
-          "id": 12
-      },
-      {
-          "name":"N0P3",
-          "image":"https://buyourobot.b-cdn.net/wp-content/uploads/edd/2015/04/00202_spider_soldier_thumb.jpg",
-          "description":"Awaiting downfall of humans",
-          "family":"nope",
-          "id": 13
-      }
+  "animals": [
+    {
+      "name": "Whinnie the pooh",
+      "image": "https://writeortakeanap.files.wordpress.com/2018/08/pooh-bear.jpg",
+      "description": "An apex predator",
+      "family": "hugger",
+      "about": "A danger to anything with a pulse, the pooh bear is rumored to not only be capable of turning a semicolon into a period, but is more than capable of taking your honey as well.",
+      "id": 1
+    },
+    {
+      "name": "Derp Noodle",
+      "image": "https://media.npr.org/assets/img/2015/03/19/viper-6686abfdcf156559aeb350dbe8beb10de54ead12-s1100-c50.jpg",
+      "description": "It sees all",
+      "family": "snek",
+      "about": "Ask it any question and it shall provide an answer. Whether or not it's always correct is difficult to say.",
+      "id": 2
+    },
+    {
+      "name": "Cute Nope",
+      "image": "https://bird-x.com/wp-content/uploads/spider-closeup.jpg",
+      "description": "Can steal your girl",
+      "family": "nope",
+      "about": "Look at those eyes... cute enough to almost say not nope too.",
+      "id": 3
+    },
+    {
+      "name": "Baby Snow Bear",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/streams/2014/February/140225/2D11741327-105187-lisa-granshawAAEA3BA7-DBD0-2809-3D75-A303123C3B8F.jpg",
+      "description": "Not a marshmellow",
+      "family": "hugger",
+      "about": "Looks like a marshmellow but is not eddible, but if you try to eat it mama snow bear will eat you.",
+      "id": 4
+    },
+    {
+      "name": "Water Noodle",
+      "image": "https://th-thumbnailer.cdn-si-edu.com/QsYOcBjhQbIjXBQdrw2QH_hcpuc=/1000x750/filters:no_upscale():focal(990x769:991x770)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/54/45/5445b3e4-8c1e-45b6-9d07-ce4286b5b4d3/image-1_web.jpg",
+      "description": "Why God why?",
+      "family": "snek",
+      "about": "Danger noodles are already bad enough, the only thing that'd be worse than a water noodle is a flying one.",
+      "id": 5
+    },
+    {
+      "name": "Nope nope nope nope...",
+      "image": "https://i.insider.com/5d09cae21568f2194e0c4743?width=700",
+      "description": "Again... why God why!?",
+      "family": "nope",
+      "about": "nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope nope ",
+      "id": 6
+    },
+    {
+      "name": "Baby Noodle",
+      "image": "https://www.nhm.ac.uk/content/dam/nhmwww/discover/snake-vision/snake-vision-full-width.jpg",
+      "description": "Awww",
+      "family": "snek",
+      "about": "Often confused with the dirt noodle but is in fact a baby danger noodle.",
+      "id": 7
+    },
+    {
+      "name": "Ninja Bear",
+      "image": "https://images.unsplash.com/photo-1566487097168-e91a4f38bee2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGFuZGElMjBiZWFyfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      "description": "The Dragon Warrior",
+      "family": "hugger",
+      "about": "Loves dumplings, karate, and saying \"skadoosh\".",
+      "id": 8
+    },
+    {
+      "name": "Italian Noodles",
+      "image": "https://theplantbasedschool.com/wp-content/uploads/2022/05/Rigatoni-arrabbiata-new-3.jpg",
+      "description": "Yum",
+      "family": "snek",
+      "about": "These noodles aren't as dangerous as the other noodles if you don't consider what it could do to your cholestrol.",
+      "id": 9
+    },
+    {
+      "name": "Teddy",
+      "image": "https://people.com/thmb/Qo9UdBJorpI5rlv7s621GfGDj2Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(399x0:401x2)/ted-movie-01-800-0f6654196fd74b58a8687a2ca3501669.jpg",
+      "description": "Just a teddy hugger",
+      "family": "hugger",
+      "about": "A once inanimate Teddy Bear, which attained sentience after his owner/brother wished upon a star.",
+      "id": 10
+    },
+    {
+      "name": "Avenger Nope",
+      "image": "https://cdn.branchcms.com/Yj0Dao1bVx-1285/images/blogs/black-widow-spider-in-garden.jpg",
+      "description": "Doesn't actually have fall damage",
+      "family": "nope",
+      "about": "Despite it's deadly bite and small figure it's arch nemesis is either a boot or infinity stone",
+      "id": 11
+    },
+    {
+      "name": "Dragon Noodle",
+      "image": "https://www.psychologicalscience.org/redesign/wp-content/uploads/2011/01/PAFF_103017_snake-1024x585.jpg",
+      "description": "Can certainly breathe fire",
+      "family": "snek",
+      "about": "An obvious descendant of dragons due to it's slit like pupils and scaled appearance",
+      "id": 12
+    },
+    {
+      "name": "N0P3",
+      "image": "https://buyourobot.b-cdn.net/wp-content/uploads/edd/2015/04/00202_spider_soldier_thumb.jpg",
+      "description": "Awaiting downfall of humans",
+      "family": "nope",
+      "about": "Created by SkyNet the latest rendition of the 2-7t",
+      "id": 13
+    },
+    {
+      "image": "https://www.vermontteddybear.com/dw/image/v2/BDKM_PRD/on/demandware.static/-/Sites-master-catalog-vtb/default/dw0c5c4cde/images/VTB/vtb-23846-18ohsosoftteddybear-lightbrown_feature4_20201012_0843.jpg?sw=600",
+      "name": "Theadore",
+      "description": "Wanted for burglary",
+      "about": "Has a warrant in all fifty states",
+      "family": "hugger",
+      "id": 14
+    }
   ]
 }
