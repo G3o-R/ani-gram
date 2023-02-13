@@ -31,7 +31,6 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <Home animalData = {animals}/> */}
       <Switch>
         <Route exact path="/">
           <Home animalData={animals} setAnimals={setAnimals}/>
