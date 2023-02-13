@@ -1,5 +1,5 @@
 # Ani-Gram Phase 2 Project
 
-    A **highly** informative animal platform.
+    A HIGHLY informative animal platform.
 
     Technologies Used:
