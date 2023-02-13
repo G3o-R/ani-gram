@@ -1,16 +1,21 @@
 .content{
     // display: flex;
     // justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
     padding-top: 5em;
     row-gap: 32px;
     gap: 32px;
     margin-left: 4em;
     margin-right: 4em;
     padding-bottom: 5em;
-    display: grid;
+    @media (min-width:900px) {
+        grid-template-columns:repeat(2,1fr);
+    }
     @media (min-width:1300px) {
         grid-template-columns: repeat(3,1fr);
     }
+    
 }
 
 .footer{
