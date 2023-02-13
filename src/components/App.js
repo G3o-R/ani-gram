@@ -28,17 +28,17 @@ function App() {
 
   //Function to make navBar disappear and reappear when scrolling
 
-  const [visibility, setVisibilty] = useState(true)
+  const [visibility, setVisibilty] = useState("")
 
   let lastScrollY = window.scrollY
   window.addEventListener("scroll",()=>{
     if(lastScrollY > window.scrollY){
       // going up
-      setVisibilty(true)
+      setVisibilty("")
     }
     if(lastScrollY < window.scrollY){
       // going down
-      setVisibilty(false)
+      setVisibilty("--hidden")
     }
     
     lastScrollY = window.scrollY
@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
+      <NavBar isVisible={visibility}/>
       <Switch>
         <Route exact path="/">
           <Home animalData={animals} setAnimals={setAnimals}/>
