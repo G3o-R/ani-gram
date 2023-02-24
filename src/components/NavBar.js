@@ -9,14 +9,14 @@ function NavBar({isVisible}){
                 <NavLink to= "/" className="link" style={{marginRight: "10px"}}>
                     Home
                 </NavLink>
-                <NavLink to="/dangerHuggers" className="link" style={{marginRight: "10px"}}>
-                    Huggers
+                <NavLink to="about" className="link" style={{marginRight: "10px"}}>
+                    about
                 </NavLink>
-                <NavLink to="/dangerNoodles" className="link" style={{marginRight: "10px"}}>
-                    Danger Noodles
+                <NavLink to="/addNewForm" className="link" style={{marginRight: "10px"}}>
+                    Add Animal
                 </NavLink>
-                <NavLink to="/nopes" className="link" style={{marginRight: "10px"}}>
-                    Nopes
+                <NavLink to="/dontKnowYet" className="link" style={{marginRight: "10px"}}>
+                    Don't Know Yet
                 </NavLink>
             </div>
             </div>
