@@ -3,9 +3,8 @@ import NavBar from "./NavBar"
 import Home from "./Home"
 import { useEffect, useState } from 'react';
 import { Route, Switch } from "react-router-dom";
-import DangerHuggers from './DangerHugger';
-import DangerNoodles from './DangerNoodles';
-import Nopes from './Nopes';
+import About from "./About"
+import AddNewForm from './AddNewForm';
 
 /* 
 create an instagram for animals
@@ -63,14 +62,14 @@ function App() {
           <Home animalData={animals} handleNewAnimal={handleNewAnimal}/>
           </Route>
         <Route path="/about">
-          <DangerHuggers animalData={huggers}/>
+          <About animalData={animals}/>
         </Route>
         <Route path="/addNewForm">
-          <DangerNoodles animalData={sneks}/>
+          <AddNewForm animalData={sneks}/>
         </Route>
-        <Route path="/dontKnowYet">
+        {/* <Route path="/dontKnowYet">
           <Nopes animalData={nopes}/>
-        </Route>
+        </Route> */}
       </Switch>
     </div>
   );

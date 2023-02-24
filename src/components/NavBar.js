@@ -10,7 +10,7 @@ function NavBar({isVisible}){
                     Home
                 </NavLink>
                 <NavLink to="about" className="link" style={{marginRight: "10px"}}>
-                    about
+                    About
                 </NavLink>
                 <NavLink to="/addNewForm" className="link" style={{marginRight: "10px"}}>
                     Add Animal
