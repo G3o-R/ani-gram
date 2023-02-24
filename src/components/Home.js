@@ -3,14 +3,14 @@ import Card from "./Card"
 import NewAnimalForm from "./NewAnimalForm"
 
 
-function Home({animalData,setAnimals}){
-    function handleNewAnimal(newAnimal){
-        setAnimals([...animalData,newAnimal])
+function Home({animalData,handleNewAnimal, handleAddToCart}){
+    function onClickAddToCart(){
+        handleAddToCart()
     }
+   
     return(
         <>
         <div className="content">
-            {/* test */}
             {animalData.map((animal)=>(
                 <Card 
                 name={animal.name}

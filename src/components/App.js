@@ -17,7 +17,7 @@ using map make a function that creates cards for each object with a photo, name,
 function App() {
   const [animals, setAnimals] = useState([])
   useEffect(()=>{
-    fetch("  http://localhost:4000/animals")
+    fetch("http://localhost:4000/animals")
     .then(res=>res.json())
     .then(animalData => setAnimals(animalData))
   },[])
@@ -27,29 +27,41 @@ function App() {
   const nopes = animals.filter( animal => animal.family === "nope")
 
   //Function to make navBar disappear and reappear when scrolling
-
+  
   const [visibility, setVisibilty] = useState("")
-
-  let lastScrollY = window.scrollY
-  window.addEventListener("scroll",()=>{
-    if(lastScrollY > window.scrollY){
-      // going up
-      setVisibilty("")
-    }
-    if(lastScrollY < window.scrollY){
-      // going down
-      setVisibilty("--hidden")
-    }
+  const [scrollPosition, setScrollPosition] = useState(0)
+  function handleScroll(e){
+    console.log(window.screenY)
+    const position = window.scrollX
+    setScrollPosition(position)
+    console.log(scrollPosition)
+  }
+  
+//   let lastScrollY = window.scrollY
+//   window.addEventListener("scroll",()=>{
+//     if(lastScrollY > window.scrollY){
+//       // going up
+//       setVisibilty("")
+//     }
+//     if(lastScrollY < window.scrollY){
+//       // going down
+//       setVisibilty("--hidden")
+//     }
     
-    lastScrollY = window.scrollY
-  })
+//     lastScrollY = window.scrollY
+//   })
+  function handleNewAnimal(newAnimal){
+    setAnimals([...animals,newAnimal])
+}
+
+
 
   return (
-    <div className="App">
+    <div className="App" onScroll={handleScroll}>
       <NavBar isVisible={visibility}/>
       <Switch>
         <Route exact path="/">
-          <Home animalData={animals} setAnimals={setAnimals}/>
+          <Home animalData={animals} handleNewAnimal={handleNewAnimal}/>
           </Route>
         <Route path="/dangerHuggers">
           <DangerHuggers animalData={huggers}/>
