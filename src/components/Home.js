@@ -3,10 +3,7 @@ import Card from "./Card"
 import NewAnimalForm from "./NewAnimalForm"
 
 
-function Home({animalData,handleNewAnimal, handleAddToCart}){
-    function onClickAddToCart(){
-        handleAddToCart()
-    }
+function Home({animalData,handleNewAnimal}){
    
     return(
         <>
@@ -22,7 +19,7 @@ function Home({animalData,handleNewAnimal, handleAddToCart}){
                 ))}
         </div>
                 <div className="footer">
-                <NewAnimalForm handleNewAnimal={handleNewAnimal}/>
+                {/* <NewAnimalForm handleNewAnimal={handleNewAnimal}/> */}
                 </div>
                 </>
     )

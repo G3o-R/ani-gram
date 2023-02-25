@@ -1,8 +1,7 @@
 import "../styles/NewAnimalForm.scss"
 import { useState } from "react"
 
-function NewAnimalForm({handleNewAnimal}){
-    const [form, setForm] = useState({})
+function NewAnimalForm({handleNewAnimal, form, setForm}){
 
     function handleChange(e){
         let name = e.target.name

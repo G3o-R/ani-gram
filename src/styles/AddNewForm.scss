@@ -1,0 +1,36 @@
+.Add-New-Form{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding-top: 5em;
+    align-content: space-around;
+    .preview-greater-card{
+        background-color: aliceblue;
+        width: 50vw;
+        aspect-ratio: 5/3;
+        border: 1px solid rgb(126, 126, 126);
+        border-radius: 10px 10px 10px 10px ;
+        .preview-card{
+            display: flex;
+            justify-content: left;
+            background-color: #ffffff ;
+            aspect-ratio: 3/4;
+            height: 100%;
+            border: 1px solid hsla(0,0%,100%,.2);
+            border-radius: 10px 10px 10px 10px ;
+            overflow: auto;
+            .image-container{
+                overflow: hidden;
+                .image{
+                    height: 100%;
+                    overflow: hidden;
+                }
+            }
+
+        }
+    }
+    .footer{
+        border-radius: 10px 10px 10px 10px ;
+
+    }
+}
