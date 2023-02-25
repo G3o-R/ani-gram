@@ -5,6 +5,7 @@ function NavBar({isVisible}){
 
     return(
             <div className={`navBar ${isVisible}`}>
+                <h1 className="title">Ani-Gram</h1>
             <div className="navLinks">
                 <NavLink to= "/" className="link" style={{marginRight: "10px"}}>
                     Home
