@@ -65,11 +65,8 @@ function App() {
           <About animalData={animals}/>
         </Route>
         <Route path="/addNewForm">
-          <AddNewForm animalData={sneks}/>
+          <AddNewForm animalData={sneks} handleNewAnimal={handleNewAnimal}/>
         </Route>
-        {/* <Route path="/dontKnowYet">
-          <Nopes animalData={nopes}/>
-        </Route> */}
       </Switch>
     </div>
   );

@@ -5,13 +5,14 @@
     padding-top: 5em;
     align-content: space-around;
     .preview-greater-card{
+        display: flex;
+        flex-direction: row;
         background-color: aliceblue;
         width: 50vw;
         aspect-ratio: 5/3;
         border: 1px solid rgb(126, 126, 126);
         border-radius: 10px 10px 10px 10px ;
         .preview-card{
-            display: flex;
             justify-content: left;
             background-color: #ffffff ;
             aspect-ratio: 3/4;
@@ -21,12 +22,32 @@
             overflow: auto;
             .image-container{
                 overflow: hidden;
+                max-height: 75%;
                 .image{
-                    height: 100%;
+                    width: 100%;
                     overflow: hidden;
                 }
             }
+            .body-container{
+                .name{
+                    font-weight: bold;
+                }
+                .description{
+                    font-style: italic;
+                }
+            }
 
+        }
+        .about-section{
+            padding: 2px;
+            width: 50%;
+            .name{
+                display: flex;
+                justify-content: center;
+            }
+            .description{
+
+            }
         }
     }
     .footer{
