@@ -4,7 +4,6 @@ import { useState } from "react"
 
 function AnimalList({animalData}){
     const [selected, setSelected] = useState("All")
-    const [filteredAnimals, setFilteredAnimals] = useState("All")
     
     let allDisplay =
      animalData.map((animal)=>( 
@@ -13,35 +12,20 @@ function AnimalList({animalData}){
       greater={true}
       key={animal.id}/>))
     
-    function handleFilter(e){
-        e.preventDefault()
-        // this is where I'll make my filter
-        if(selected === "All"){
-            setFilteredAnimals("All")
-        }
-        else{
-            console.log(selected)
-            setFilteredAnimals(animalData.filter((animals)=> animals.family === selected))
-        }
-    }
-    // const nopes = animalData.filter( animal => animal.family === "nope")
+  
     return(<div className="about">
         <div className="grid">
-        <form onSubmit={handleFilter}>
+        <form >
         <select type="text" name="family" placeholder="filter..."  onChange={(e)=>setSelected(e.target.value)}>
             <option value="All">All</option>
             <option value="hugger">Huggers</option>
             <option value="snek">Sneks</option>
             <option value="nope">Nopes</option>
         </select>
-        <button type="submit">Filter</button>
         </form>
-        {/* 
-        
-        */}
-        {filteredAnimals === "All"  ? allDisplay : 
-        // need to fix styling
-        filteredAnimals.map((animal)=>
+       
+        {selected === "All"  ? allDisplay : 
+        animalData.filter((animals)=> animals.family === selected).map((animal)=>
         <Card 
         greater={true} 
         animal={animal} 
