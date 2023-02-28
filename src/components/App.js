@@ -3,9 +3,8 @@ import NavBar from "./NavBar"
 import Home from "./Home"
 import { useEffect, useState } from 'react';
 import { Route, Switch } from "react-router-dom";
-import About from "./About"
-import AddNewForm from './AddNewForm';
-
+import AnimalList from "./AnimalList"
+import AddNewAnimal from './AddNewAnimal';
 /* 
 create an instagram for animals
 have a nav bar labeled "good bois" "danger noodles" "nopes"
@@ -21,51 +20,51 @@ function App() {
     .then(animalData => setAnimals(animalData))
   },[])
 
-  const huggers = animals.filter( animal => animal.family === "hugger")
-  const sneks = animals.filter( animal => animal.family === "snek")
-  const nopes = animals.filter( animal => animal.family === "nope")
-
+  
+console.log(animals)
   //Function to make navBar disappear and reappear when scrolling
   
   const [visibility, setVisibilty] = useState("")
-  // function handleScroll(e){
-  //   console.log(window.screenY)
-  //   const position = window.scrollX
-  //   setScrollPosition(position)
-  //   console.log(scrollPosition)
-  // }
+  function handleScroll(e){
+    console.log(e)
+    // console.log(window.screenY)
+    // const position = window.scrollX
+    // setScrollPosition(position)
+    // console.log(scrollPosition)
+  }
   
-//   let lastScrollY = window.scrollY
-//   window.addEventListener("scroll",()=>{
-//     if(lastScrollY > window.scrollY){
-//       // going up
-//       setVisibilty("")
-//     }
-//     if(lastScrollY < window.scrollY){
-//       // going down
-//       setVisibilty("--hidden")
-//     }
+  // let lastScrollY = window.scrollY
+  // window.addEventListener("scroll",()=>{
+  //   if(lastScrollY > window.scrollY){
+  //     // going up
+  //     setVisibilty("")
+  //   }
+  //   if(lastScrollY < window.scrollY){
+  //     // going down
+  //     setVisibilty("--hidden")
+  //   }
     
-//     lastScrollY = window.scrollY
-//   })
+  //   lastScrollY = window.scrollY
+  // })
   function handleNewAnimal(newAnimal){
+    console.log(newAnimal)
     setAnimals([...animals,newAnimal])
 }
 
 
 
   return (
-    <div className="App">
+    <div className="App" onScroll={handleScroll}>
       <NavBar isVisible={visibility}/>
       <Switch>
         <Route exact path="/">
-          <Home animalData={animals} handleNewAnimal={handleNewAnimal}/>
+          <Home animalData={animals}/>
           </Route>
         <Route path="/about">
-          <About animalData={animals}/>
+          <AnimalList animalData={animals}/>
         </Route>
         <Route path="/addNewForm">
-          <AddNewForm animalData={sneks} handleNewAnimal={handleNewAnimal}/>
+          <AddNewAnimal handleNewAnimal={handleNewAnimal}/>
         </Route>
       </Switch>
     </div>

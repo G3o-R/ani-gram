@@ -1,25 +1,21 @@
 import "../styles/Home.scss"
 import Card from "./Card"
-import NewAnimalForm from "./NewAnimalForm"
 
 
-function Home({animalData,handleNewAnimal}){
+function Home({animalData}){
    
     return(
         <>
         <div className="content">
             {animalData.map((animal)=>(
                 <Card 
-                name={animal.name}
-                image={animal.image}
-                description={animal.description}
-                family={animal.family}
+                greater={false}
+                animal={animal}
                 key={animal.id}
                 />
                 ))}
         </div>
                 <div className="footer">
-                {/* <NewAnimalForm handleNewAnimal={handleNewAnimal}/> */}
                 </div>
                 </>
     )

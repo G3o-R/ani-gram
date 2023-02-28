@@ -1,10 +1,7 @@
-import GreaterCard from "./GreaterCard"
-import NewAnimalForm from "./NewAnimalForm"
-import { useState } from "react"
-import "../styles/AddNewForm.scss"
+import "../styles/PreviewCard.scss"
 
-function AddNewForm({handleNewAnimal}){
-    const [form, setForm] = useState({})
+function PreviewCard({form}){
+    console.log(form)
 
     // build initially empty greater card
     // NewAnimalForm right below
@@ -20,7 +17,7 @@ function AddNewForm({handleNewAnimal}){
                     <img src={image} className="image"/>
                 </div>
                 <div className="body-container">
-                    <p className="name">{`The ${name}`}</p>
+                    <p className="name">The {name}</p>
                     <p className="description">{description}</p>
                 </div>
                 <div className="bottom">{family}</div>
@@ -32,12 +29,8 @@ function AddNewForm({handleNewAnimal}){
                 </div>
 
         </div>
-        <div className="footer">
-            <NewAnimalForm handleNewAnimal={handleNewAnimal} 
-            form={form} 
-            setForm={setForm}/>
-        </div>
+     
         
     </div>)
 }
-export default AddNewForm
+export default PreviewCard

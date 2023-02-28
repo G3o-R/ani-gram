@@ -1,18 +1,12 @@
-import "../styles/About.scss"
-import GreaterCard from "./GreaterCard"
+import "../styles/AnimalList.scss"
+import Card from "./Card"
 import { useState } from "react"
 
-function About({animalData}){
-
-   let allDisplay =  animalData.map((animal)=> <GreaterCard animal={animal} key={animal.id}/>)
-
-    // const allDisplay =  animalData.map((animal)=> <GreaterCard animal={animal} key={animal.id}/>)
-
+function AnimalList({animalData}){
     const [selected, setSelected] = useState("All")
     const [filteredAnimals, setFilteredAnimals] = useState("All")
-
-    // console.log(animalsToDisplay)
-    // console.log(allDisplay)
+    
+    let allDisplay =  animalData.map((animal)=> <Card animal={animal} greater={true} key={animal.id}/>)
     
     function handleFilter(e){
         e.preventDefault()
@@ -23,13 +17,11 @@ function About({animalData}){
         else{
             console.log(selected)
             setFilteredAnimals(animalData.filter((animals)=> animals.family === selected))
-            // console.log(animalData.filter((animals)=> animals.family === selected))
         }
     }
     // const nopes = animalData.filter( animal => animal.family === "nope")
     return(<div className="about">
         <div className="grid">
-        {/* <div className="filter"> */}
         <form onSubmit={handleFilter}>
         <select type="text" name="family" placeholder="filter..."  onChange={(e)=>setSelected(e.target.value)}>
             <option value="All">All</option>
@@ -39,10 +31,17 @@ function About({animalData}){
         </select>
         <button type="submit">Filter</button>
         </form>
-        {/* </div> */}
-        {filteredAnimals === "All"  ? allDisplay : filteredAnimals.map((animal)=><GreaterCard animal={animal} key={animal.id}/>)}
+        {/* 
+        
+        */}
+        {filteredAnimals === "All"  ? allDisplay : 
+        filteredAnimals.map((animal)=>
+        <Card 
+        greater={true} 
+        animal={animal} 
+        key={animal.id}/>)}
     </div>
     </div>)
 }
 
-export default About
+export default AnimalList

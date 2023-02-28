@@ -137,19 +137,19 @@
       "id": 17
     },
     {
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6xG7yiuVjn41uwbnlfIzQujBr72c6Bp-E0A&usqp=CAU",
-      "name": "ramen",
-      "description": "noodles but not dangerous",
-      "about": "This might actually be Pho, but I hope I'm not considered uncultured for not knowing the difference",
+      "image": "https://realfood.tesco.com/media/images/1400x919-tomato-pasta-6a5a3c8e-f111-490d-805c-9b62fbec8691-0-1400x919.jpg",
+      "name": "Impasta",
+      "description": "Absolutely Tastey",
       "family": "snek",
+      "about": "dangerously high in carbs will make you sleepy",
       "id": 18
     },
     {
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6xG7yiuVjn41uwbnlfIzQujBr72c6Bp-E0A&usqp=CAU",
-      "name": "ramen",
-      "description": "noodles but not dangerous",
-      "about": "This might actually be Pho, but I hope I'm not considered uncultured for not knowing the difference",
-      "family": "snek",
+      "image": "https://compote.slate.com/images/e7db0290-3c14-47c1-8ef9-421bc7d78907.jpeg?crop=1560%2C1040%2Cx0%2Cy0",
+      "name": "\"snow\" bear",
+      "description": "likes to party",
+      "about": "a force to be reckoned with",
+      "family": "hugger",
       "id": 19
     }
   ]

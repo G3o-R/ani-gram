@@ -1,7 +1,9 @@
 import "../styles/NewAnimalForm.scss"
 import { useState } from "react"
+import PreviewCard from "./PreviewCard"
 
-function NewAnimalForm({handleNewAnimal, form, setForm}){
+function AddNewAnimal({handleNewAnimal}){
+    const [form, setForm] = useState({})
 
     function handleChange(e){
         let name = e.target.name
@@ -17,11 +19,14 @@ function NewAnimalForm({handleNewAnimal, form, setForm}){
            body: JSON.stringify(form) 
         })
         .then(res=>res.json())
-        handleNewAnimal(form)
-        // handleNewAnimal(form)
+        .then((newAnimal)=>handleNewAnimal(newAnimal))
     }
 
-    return(<div className="animal-form">
+    return(
+        <>
+        <PreviewCard form={form}/>
+        <div className="footer">
+    <div className="animal-form">
         <h1>Add New Animal</h1>
         <form onSubmit={handleNewAnimalSubmit}>
             <input type="text" name="image" placeholder="image..." onChange={handleChange}/>
@@ -37,7 +42,10 @@ function NewAnimalForm({handleNewAnimal, form, setForm}){
             </select>
             <button type="submit">Add Animal</button>
         </form>
-    </div>)
+        </div>
+    </div>
+        </>
+    )
 }
 
-export default NewAnimalForm
+export default AddNewAnimal
