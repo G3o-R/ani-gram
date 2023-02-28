@@ -1,9 +1,9 @@
 import "../styles/Card.scss"
 
 function Card({animal, greater}){
-    console.log(greater)
     const {image, name, description, about, family} = animal
     return(
+        <div className={greater ? "greater-card" : ""}>
     <div className="card">
         <div className="image-container">
             <img src={image} alt={name} className="image" />
@@ -13,6 +13,7 @@ function Card({animal, greater}){
             <p className="description">{description}</p>
         </div>
         <div className="bottom">{family}</div>
+        </div>
         {greater === true ?   <div className="about-section">
                         <h1 className="name">{name}</h1>
                          <p className="about">{about}</p>

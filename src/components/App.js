@@ -21,7 +21,6 @@ function App() {
   },[])
 
   
-console.log(animals)
   //Function to make navBar disappear and reappear when scrolling
   
   const [visibility, setVisibilty] = useState("")

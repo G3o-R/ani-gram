@@ -6,7 +6,12 @@ function AnimalList({animalData}){
     const [selected, setSelected] = useState("All")
     const [filteredAnimals, setFilteredAnimals] = useState("All")
     
-    let allDisplay =  animalData.map((animal)=> <Card animal={animal} greater={true} key={animal.id}/>)
+    let allDisplay =
+     animalData.map((animal)=>( 
+     <Card
+      animal={animal}
+      greater={true}
+      key={animal.id}/>))
     
     function handleFilter(e){
         e.preventDefault()
@@ -35,6 +40,7 @@ function AnimalList({animalData}){
         
         */}
         {filteredAnimals === "All"  ? allDisplay : 
+        // need to fix styling
         filteredAnimals.map((animal)=>
         <Card 
         greater={true} 
