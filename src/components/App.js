@@ -24,13 +24,13 @@ function App() {
   //Function to make navBar disappear and reappear when scrolling
   
   const [visibility, setVisibilty] = useState("")
-  function handleScroll(e){
-    console.log(e)
-    // console.log(window.screenY)
-    // const position = window.scrollX
-    // setScrollPosition(position)
-    // console.log(scrollPosition)
-  }
+  // function handleScroll(e){
+  //   console.log(e)
+  //   // console.log(window.screenY)
+  //   // const position = window.scrollX
+  //   // setScrollPosition(position)
+  //   // console.log(scrollPosition)
+  // }
   
   // let lastScrollY = window.scrollY
   // window.addEventListener("scroll",()=>{
@@ -49,20 +49,28 @@ function App() {
     console.log(newAnimal)
     setAnimals([...animals,newAnimal])
 }
+/*
+create a counter component "creating new component"
+link to routes and navLink
+within counter component have three buttons
+play,reverse, pause
+definitely need useEffect and setInterval (increase by one every second) on load
+create p tag for counter to display
+*/
 
 
 
   return (
-    <div className="App" onScroll={handleScroll}>
+    <div className="App">
       <NavBar isVisible={visibility}/>
       <Switch>
         <Route exact path="/">
           <Home animalData={animals}/>
           </Route>
-        <Route path="/about">
+        <Route path="/animalInfo">
           <AnimalList animalData={animals}/>
         </Route>
-        <Route path="/addNewForm">
+        <Route path="/addNewAnimal">
           <AddNewAnimal handleNewAnimal={handleNewAnimal}/>
         </Route>
       </Switch>

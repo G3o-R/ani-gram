@@ -1,14 +1,14 @@
 import "../styles/PreviewCard.scss"
 
-function PreviewCard({form}){
-    console.log(form)
+function PreviewCard({formData}){
+    // console.log(form)
 
     // build initially empty greater card
     // NewAnimalForm right below
     // any input should be displayed automatically as a preview
     // card is posted
 
-    const {image, name, description, family, about} = form
+    const {image, name, description, family, about} = formData
 
     return(<div className="Add-New-Form">
         <div className="preview-greater-card">

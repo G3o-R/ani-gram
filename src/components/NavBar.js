@@ -10,10 +10,10 @@ function NavBar({isVisible}){
                 <NavLink to= "/" className="link" style={{marginRight: "10px"}}>
                     Home
                 </NavLink>
-                <NavLink to="/about" className="link" style={{marginRight: "10px"}}>
+                <NavLink to="/animalInfo" className="link" style={{marginRight: "10px"}}>
                     About the animals
                 </NavLink>
-                <NavLink to="/addNewForm" className="link" style={{marginRight: "10px"}}>
+                <NavLink to="/addNewAnimal" className="link" style={{marginRight: "10px"}}>
                     Add Animal
                 </NavLink>
             </div>
